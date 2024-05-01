@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, Image } from "react-native";
 import React from "react";
 import { AntDesign } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
@@ -24,9 +24,12 @@ const index = () => {
 
     
         <View className="grid grid-cols-2">
-          <View>
+          <View className="">
                 <Text className="text-lg text-black font-bold">Food Delivery</Text>
                 <Text className="text-sm text-black">Order Food you love</Text>
+                <Image
+                source={"image"}
+                />
           </View>
 
           <View>
