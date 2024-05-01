@@ -22,7 +22,21 @@ const index = () => {
         </View>
       </View>
 
-      <View></View>
+    
+        <View className="grid grid-cols-2">
+          <View>
+                
+          </View>
+
+          <View>
+
+
+          </View>
+       
+
+   
+
+      </View>
 
 
 
