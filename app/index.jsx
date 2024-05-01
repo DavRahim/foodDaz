@@ -22,6 +22,8 @@ const index = () => {
         </View>
       </View>
 
+      <View></View>
+
 
 
     </View>
