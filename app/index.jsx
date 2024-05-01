@@ -26,7 +26,7 @@ const index = () => {
         <View className="grid grid-cols-2">
           <View>
                 <Text className="text-lg text-black font-bold">Food Delivery</Text>
-                
+                <Text className="text-sm text-black">Order Food you love</Text>
           </View>
 
           <View>
