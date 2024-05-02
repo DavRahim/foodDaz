@@ -1,51 +1,25 @@
-import { View, Text, TextInput, Image } from "react-native";
+import { View, Text, Button } from "react-native";
 import React from "react";
-import { AntDesign } from '@expo/vector-icons';
-import { Feather } from '@expo/vector-icons';
+import { Link } from "expo-router";
 
-const index = () => {
+const Page = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-white ">
-      <View>
-      <Text className="text-3xl ">Home</Text>
-        <Text className="text-sm text-white">Rajia Fashion</Text>
-        <View className="ml-2">
-          <AntDesign name="hearto" size={24} color="black" />
-          <Feather name="shopping-bag" size={24} color="black" />
-        </View>
-        <View className="bg-white px-2 pl-2">
-          <AntDesign name="search1" size={24} color="black" />
-          <TextInput
-          className="bg-white px-3 pl-2"
-          placeholder="Search for shops & Restaurants"
-          />
-        </View>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+          <Text style={{ fontSize: 30 }}>Welcome to our app</Text>
+          <Link href={'favorites'}>
+              <Text style={{ fontSize: 18 }}>Go to favorites Page</Text>
+          </Link>
+          <Link href={'/blog'} asChild>
+              <Button title='Go to Blog Page' />
+          </Link>
+          <Link href={'/blog'} asChild>
+              <Button title='Go to Contact Page' />
+          </Link>
+          <Link href={'(drawer)/(tabs)/feed'} asChild>
+              <Button title='Go to Tabs' />
+          </Link>
       </View>
-
-    
-        <View className="grid grid-cols-2">
-          <View className="">
-                <Text className="text-lg text-black font-bold">Food Delivery</Text>
-                <Text className="text-sm text-black">Order Food you love</Text>
-                <Image
-                source={"image"}
-                />
-          </View>
-
-          <View>
-
-
-          </View>
-       
-
-   
-
-      </View>
-
-
-
-    </View>
   );
 };
 
-export default index;
+export default Page;

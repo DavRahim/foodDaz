@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "FoodDaz",
-    "slug": "foodDaz",
-    "scheme": "foodDaz",
+    "slug": "fooddaz",
+    "scheme": "fooddaz",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
