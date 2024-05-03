@@ -8,7 +8,7 @@ import {
     MaterialIcons,
     Ionicons,
 } from "@expo/vector-icons";
-import { usePathname } from "expo-router";
+import { router, usePathname } from "expo-router";
 
 
 const CustomDrawerContent = (props) => {
@@ -47,7 +47,7 @@ const CustomDrawerContent = (props) => {
               ]}
               style={{ backgroundColor: pathname == "/feed" ? "#333" : "#fff" }}
               onPress={() => {
-                  router.push("/(drawer)/(tabs)/feed");
+                  router.push("/drawer/favorites");
               }}
           />
           <DrawerItem
