@@ -11,7 +11,7 @@ const RootLayout = () => {
       <GestureHandlerRootView style={{ flex: 1 }}>
         <Drawer drawerContent={(props) => <CustomDrawerContent {...props} />} screenOptions={{
           drawerStyle: {
-            width: "80%"
+            width: "90%"
           },
           headerShown: false
         }}>
