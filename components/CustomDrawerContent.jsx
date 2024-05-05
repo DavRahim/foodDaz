@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import React, { useEffect } from "react";
 import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
 
@@ -32,7 +32,9 @@ const CustomDrawerContent = (props) => {
                 />
                 <Text className="text-[18px] font-bold text-white">Abdur Rahim</Text>
             </View>
-            <View className='flex flex-row justify-between p-3 border-b-[1px] border-b-gray-200'>
+            <TouchableOpacity onPress={() => {
+                router.push("/drawer/refund-account");
+            }} className='flex flex-row justify-between p-3 border-b-[1px] border-b-gray-200'>
                 <View>
                     <Text className="text-[15px] font-bold pb-3">Refund  account</Text>
                     <Text className="text-gray-600">Balance and payment methods</Text>
@@ -40,7 +42,7 @@ const CustomDrawerContent = (props) => {
                 <Text className="bg-[#FAD9E7] text-[13px] h-[22px] rounded-lg text-primary font-bold px-2">
                     Tk 02323234
                 </Text>
-            </View>
+            </TouchableOpacity>
             <DrawerItem
                 icon={({ color, size }) => (
                     <FontAwesome5 
@@ -56,7 +58,7 @@ const CustomDrawerContent = (props) => {
                 ]}
                 style={{ backgroundColor: pathname == "/feed" ? "#333" : "#fff" }}
                 onPress={() => {
-                    router.push("/drawer/favorites");
+                    router.push("/drawer/become-pandapro");
                 }}
 
             />
