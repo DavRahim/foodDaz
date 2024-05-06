@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const VouchersAndOffers = () => {
   return (
     <SafeAreaView>
-      <Text>VouchersAndOffers</Text>
+      
     </SafeAreaView>
   );
 };
