@@ -77,7 +77,7 @@ const CustomDrawerContent = (props) => {
                 ]}
                 style={{ backgroundColor: pathname == "/profile" ? "#333" : "#fff" }}
                 onPress={() => {
-                    router.push("/(drawer)/(tabs)/profile");
+                    router.push("/drawer/vouchers-and-offers");
                 }}
             />
             <DrawerItem
