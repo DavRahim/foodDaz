@@ -11,6 +11,19 @@ const VouchersAndOffers = () => {
         <Text className="text-[16px] font-bold">Vouchers & Offers</Text>
       </View>
       <ScrollView>
+        <View>
+
+           <View>
+            <Text>Tk 0</Text>
+            <Text> saved this month</Text>
+           </View>
+
+           <View>
+            <AntDesign name="creditcard" size={24} color="black" />
+            <Text>Add a Voucher</Text>
+           </View>
+
+        </View>
 
       </ScrollView>
     </SafeAreaView>
