@@ -21,7 +21,7 @@ const Favorites = () => {
           <Text className="absolute top-6 right-0 bg-primary px-[5px] text-[12px] rounded-full text-white font-bold">2</Text>
         </View>
 
-        {/* header */}
+        {/* header Restaurants*/}
 
         <View className="mt-6 border-b border-b-[#3333]">
           <View className="flex-row mx-12 justify-between items-center pb-3">
@@ -31,6 +31,11 @@ const Favorites = () => {
           <View className="border-2 bg-primary border-primary rounded-2xl w-[120px] ml-8 "></View>
 
 
+        </View>
+
+        <View>
+          <Text>Delivery</Text>
+          <Text>Pick-Up</Text>
         </View>
 
       </ScrollView>
