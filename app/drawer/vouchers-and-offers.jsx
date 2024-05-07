@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, Image } from "react-native";
+import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from '@expo/vector-icons';
@@ -10,6 +10,8 @@ import daily1 from "../../assets/daliy/daily1.png"
 import daily2 from "../../assets/daliy/daliy2.png"
 import daily3 from "../../assets/daliy/daliy3.png"
 import daily6 from "../../assets/daliy/daliy6.png"
+
+import refer from "../../assets/refer.jpg"
 
 const VouchersAndOffers = () => {
   return (
@@ -169,6 +171,28 @@ const VouchersAndOffers = () => {
 
           </ScrollView>
 
+        </View>
+
+        {/* refer */}
+
+        <View>
+          <Text>
+            Refer a friend
+          </Text>
+          <View>
+            <Image
+              source={refer}
+              className="w-[100px] h-[100px]"
+            />
+            <View>
+              <Text>
+                Refer friends and get Tk 200
+              </Text>
+            </View>
+            <TouchableOpacity>
+              <Text>Find out how</Text>
+            </TouchableOpacity>
+          </View>
         </View>
 
       </ScrollView>
