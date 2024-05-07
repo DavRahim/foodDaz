@@ -3,6 +3,7 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const VouchersAndOffers = () => {
   return (
@@ -41,6 +42,87 @@ const VouchersAndOffers = () => {
             <Text className="pr-1 text-[13px] font-bold text-center">Clear All</Text>
           </View>
         </View>
+
+        {/* voucher */}
+        <View>
+          {/* Cart */}
+          <View className="bg-white rounded-xl mb-4">
+            <View className="flex flex-row items-center px-3 py-[6px] border-t border-x rounded-xl border-[#3333]">
+              <MaterialCommunityIcons name="brightness-percent" size={30} color="#D00764" />
+              <View className="ml-3">
+                <Text>Miss you! Here's TK100 off.</Text>
+                <Text> <Text>TK100</Text> <MaterialIcons name="info-outline" size={14} color="#D00764" /> VNR3IRQ9</Text>
+              </View>
+            </View>
+            <View className="border-dashed border-t w-[90%] mx-auto border-[#3333]"></View>
+            {/* and */}
+            <View className="py-2 px-3 border-b border-x rounded-xl border-[#3333]">
+              <View className="flex flex-row items-center">
+                <Text className="border px-2 py-[3px] text-[13px] rounded-2xl border-[#3333]">Min. spend Tk300 . <Text className="font-bold text-red-500">Expires on 11 May 20...</Text></Text>
+                <Text className="ml-3 font-bold text-primary">Details</Text>
+              </View>
+            </View>
+
+          </View>
+          <View className="bg-white rounded-xl mb-4">
+            <View className="flex flex-row items-center px-3 py-[6px] border-t border-x rounded-xl border-[#3333]">
+              <MaterialCommunityIcons name="brightness-percent" size={30} color="#D00764" />
+              <View className="ml-3">
+                <Text>Miss you! Here's TK100 off.</Text>
+                <Text> <Text>TK100</Text> <MaterialIcons name="info-outline" size={14} color="#D00764" /> VNR3IRQ9</Text>
+              </View>
+            </View>
+            <View className="border-dashed border-t w-[90%] mx-auto border-[#3333]"></View>
+            {/* and */}
+            <View className="py-2 px-3 border-b border-x rounded-xl border-[#3333]">
+              <View className="flex flex-row items-center">
+                <Text className="border px-2 py-[3px] text-[13px] rounded-2xl border-[#3333]">Min. spend Tk300 . <Text className="font-bold text-red-500">Expires on 11 May 20...</Text></Text>
+                <Text className="ml-3 font-bold text-primary">Details</Text>
+              </View>
+            </View>
+
+          </View>
+          <View className="bg-white rounded-xl mb-4">
+            <View className="flex flex-row items-center px-3 py-[6px] border-t border-x rounded-xl border-[#3333]">
+              <MaterialCommunityIcons name="brightness-percent" size={30} color="#D00764" />
+              <View className="ml-3">
+                <Text>Miss you! Here's TK100 off.</Text>
+                <Text> <Text>TK100</Text> <MaterialIcons name="info-outline" size={14} color="#D00764" /> VNR3IRQ9</Text>
+              </View>
+            </View>
+            <View className="border-dashed border-t w-[90%] mx-auto border-[#3333]"></View>
+            {/* and */}
+            <View className="py-2 px-3 border-b border-x rounded-xl border-[#3333]">
+              <View className="flex flex-row items-center">
+                <Text className="border px-2 py-[3px] text-[13px] rounded-2xl border-[#3333]">Min. spend Tk300 . <Text className="font-bold text-red-500">Expires on 11 May 20...</Text></Text>
+                <Text className="ml-3 font-bold text-primary">Details</Text>
+              </View>
+            </View>
+
+          </View>
+          <View className="bg-white rounded-xl mb-4">
+            <View className="flex flex-row items-center px-3 py-[6px] border-t border-x rounded-xl border-[#3333]">
+              <MaterialCommunityIcons name="brightness-percent" size={30} color="#D00764" />
+              <View className="ml-3">
+                <Text>Miss you! Here's TK100 off.</Text>
+                <Text> <Text>TK100</Text> <MaterialIcons name="info-outline" size={14} color="#D00764" /> VNR3IRQ9</Text>
+              </View>
+            </View>
+            <View className="border-dashed border-t w-[90%] mx-auto border-[#3333]"></View>
+            {/* and */}
+            <View className="py-2 px-3 border-b border-x rounded-xl border-[#3333]">
+              <View className="flex flex-row items-center">
+                <Text className="border px-2 py-[3px] text-[13px] rounded-2xl border-[#3333]">Min. spend Tk300 . <Text className="font-bold text-red-500">Expires on 11 May 20...</Text></Text>
+                <Text className="ml-3 font-bold text-primary">Details</Text>
+              </View>
+            </View>
+
+          </View>
+
+        </View>
+
+        {/* Discover */}
+        
 
       </ScrollView>
     </SafeAreaView>
