@@ -1,9 +1,15 @@
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, Image } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+//most cart
+
+import daily1 from "../../assets/daliy/daily1.png"
+import daily2 from "../../assets/daliy/daliy2.png"
+import daily3 from "../../assets/daliy/daliy3.png"
+import daily6 from "../../assets/daliy/daliy6.png"
 
 const VouchersAndOffers = () => {
   return (
@@ -122,7 +128,48 @@ const VouchersAndOffers = () => {
         </View>
 
         {/* Discover */}
-        
+        <View className="pl-4 pb-[15px] my-5 mb-24">
+          <Text className="text-[20px] font-bold mb-4">Discover more restaurant deals</Text>
+          <ScrollView horizontal={true}>
+            <View className="border border-[#0f0f0f2f] rounded-lg">
+              <Image
+                source={daily1}
+                className="w-[150px] h-[180px]"
+                resizeMode="contain"
+              />
+            </View>
+            <View>
+              <Image
+                source={daily2}
+                className="w-[150px] h-[180px]"
+                resizeMode="contain"
+              />
+            </View>
+            <View>
+              <Image
+                source={daily3}
+                className="w-[150px] h-[180px]"
+                resizeMode="contain"
+              />
+            </View>
+            <View>
+              <Image
+                source={daily6}
+                className="w-[150px] h-[180px]"
+                resizeMode="contain"
+              />
+            </View>
+            <View>
+              <Image
+                source={daily2}
+                className="w-[150px] h-[180px]"
+                resizeMode="contain"
+              />
+            </View>
+
+          </ScrollView>
+
+        </View>
 
       </ScrollView>
     </SafeAreaView>
