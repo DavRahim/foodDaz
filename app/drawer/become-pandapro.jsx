@@ -9,6 +9,7 @@ import logoPro2 from "../../assets/pandapro/pandapro111.png"
 import logoPro11 from "../../assets/pandapro/pandapro2.png"
 import logoPro3 from "../../assets/pandapro/pandapro3.png"
 import logoPro5 from "../../assets/pandapro/pandapro5.png"
+import { router } from "expo-router";
 
 const BecomePandaPro = () => {
   const [faq, setFaq] = useState(true)
@@ -20,7 +21,9 @@ const BecomePandaPro = () => {
     <SafeAreaView className="relative">
       <ScrollView className="mx-[14px]">
         <View className="mt-5">
-          <AntDesign name="arrowleft" size={20} color="#D00764" />
+          <AntDesign onPress={() => {
+            router.push("/");
+          }} name="arrowleft" size={20} color="#D00764" />
         </View>
 
         <View className="mt-5">

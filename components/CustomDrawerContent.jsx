@@ -95,7 +95,7 @@ const CustomDrawerContent = (props) => {
                 ]}
                 style={{ backgroundColor: pathname == "/favourites" ? "#333" : "#fff" }}
                 onPress={() => {
-                    router.push("/favourites");
+                    router.push("/drawer/favorites");
                 }}
             />
             <DrawerItem

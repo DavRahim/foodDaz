@@ -12,12 +12,15 @@ import daily3 from "../../assets/daliy/daliy3.png"
 import daily6 from "../../assets/daliy/daliy6.png"
 
 import refer from "../../assets/refer.jpg"
+import { router } from "expo-router";
 
 const VouchersAndOffers = () => {
   return (
     <SafeAreaView>
       <View className="flex flex-row px-3 py-5 bg-white gap-5 border-b-gray-600">
-        <AntDesign name="arrowleft" size={24} color="#D00764" />
+        <AntDesign onPress={() => {
+          router.push("/");
+        }} name="arrowleft" size={24} color="#D00764" />
         <Text className="text-[16px] font-bold">Vouchers & Offers</Text>
       </View>
       <ScrollView className="mx-[14px]">
