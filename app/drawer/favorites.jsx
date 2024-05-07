@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import refer from "../../assets/refer.jpg"
+import { router } from "expo-router";
 
 const Favorites = () => {
 
@@ -13,7 +14,9 @@ const Favorites = () => {
         {/* header */}
         <View className="flex-row justify-between items-center py-3">
           <View className="flex-row items-center">
-            <AntDesign name="arrowleft" size={24} color="#D00764" />
+            <AntDesign onPress={() => {
+              router.push("/");
+            }} name="arrowleft" size={24} color="#D00764" />
           <Text className="ml-5 text-[18px] font-bold">Favorites</Text>
           </View>
           <View className="relative">
