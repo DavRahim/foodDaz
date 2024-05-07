@@ -1,13 +1,14 @@
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
+import refer from "../../assets/refer.jpg"
 
 const Favorites = () => {
 
   return (
-    <SafeAreaView className="">
+    <SafeAreaView className="bg-white h-full">
       <ScrollView className="mx-[14px]">
         {/* header */}
         <View className="flex-row justify-between items-center py-3">
@@ -33,9 +34,25 @@ const Favorites = () => {
 
         </View>
 
-        <View>
-          <Text>Delivery</Text>
-          <Text>Pick-Up</Text>
+        <View className="flex-row mt-5 items-center">
+          <Text className=" px-[14px] py-[10px] mr-5 rounded-3xl bg-primary text-white font-bold">Delivery</Text>
+          <Text className=" px-[14px] py-[10px] mr-5 rounded-3xl border border-[#3333] font-bold">Pick-Up</Text>
+        </View>
+
+        <View className="flex-1 mt-52 items-center">
+          <Image
+            source={refer}
+            className="w-[100px] h-[100px]"
+          />
+          <Text className="text-[22px] font-bold mt-3">
+            No favourites saved
+          </Text>
+          <Text className="text-center text-[#333333c2] mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quis et necessitatibus quas .
+          </Text>
+          <TouchableOpacity className="mt-5 bg-primary py-[5px] px-3 rounded-md">
+            <Text className="text-white font-bold">Let's find some favourites</Text>
+          </TouchableOpacity>
         </View>
 
       </ScrollView>
