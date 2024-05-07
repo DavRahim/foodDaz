@@ -130,7 +130,7 @@ const VouchersAndOffers = () => {
         </View>
 
         {/* Discover */}
-        <View className="pl-4 pb-[15px] my-5 mb-24">
+        <View className="pb-[15px] my-5">
           <Text className="text-[20px] font-bold mb-4">Discover more restaurant deals</Text>
           <ScrollView horizontal={true}>
             <View className="border border-[#0f0f0f2f] rounded-lg">
@@ -175,23 +175,25 @@ const VouchersAndOffers = () => {
 
         {/* refer */}
 
-        <View>
-          <Text>
+        <View className="mb-28">
+          <Text className="mb-4 text-[18px] font-bold">
             Refer a friend
           </Text>
-          <View>
+          <View className="flex flex-row border p-[14px] border-[#3333] bg-white rounded-xl">
             <Image
               source={refer}
               className="w-[100px] h-[100px]"
             />
-            <View>
-              <Text>
-                Refer friends and get Tk 200
+            <View className="ml-8 ">
+              <Text className="text-[16px] font-bold">
+                Refer friends and get Tk 
               </Text>
+              <Text className="text-[16px] font-bold  mb-5">200</Text>
+              <TouchableOpacity className="bg-primary w-[130px] p-[6px] rounded-xl">
+                <Text className="text-center font-bold text-white">Find out how</Text>
+              </TouchableOpacity>
             </View>
-            <TouchableOpacity>
-              <Text>Find out how</Text>
-            </TouchableOpacity>
+           
           </View>
         </View>
 
