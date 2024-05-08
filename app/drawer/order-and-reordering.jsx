@@ -1,4 +1,4 @@
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import React, { Component } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Entypo } from '@expo/vector-icons';
@@ -13,11 +13,11 @@ export class OrderAndReordering extends Component {
           <Text className="text-[18px] font-bold ml-4">Orders</Text>
         </View>
         <ScrollView>
-        <Text className="text-[20px] font-bold my-7 mx-4">Past orders</Text>
+        <Text className="text-[20px] font-bold mt-7 mb-5 mx-4">Past orders</Text>
 
         <View className="mx-4 ">
           {/* cart */}
-            <View className="border p-3">
+            <View className="border border-[#33333352] p-3 rounded-xl mb-3">
               <View className="flex-row justify-between">
               <View className="flex-row">
               <Image
@@ -25,19 +25,139 @@ export class OrderAndReordering extends Component {
                   className="w-[90px] h-[90px] rounded-xl"
               />
               <View className="w-[200px] ml-4">
-                <Text className="text-[16px] font-bold">Ka Te Kacchi Express - Aftabnagar</Text>
+                <Text className="text-[15px] font-semibold">Ka Te Kacchi Express - Aftabnagar</Text>
                 <Text className="mt-2">Picked up on 19 Apr 17:00</Text>
                     <Text className="mt-2">Basmati Mutton Kacchi</Text>
               </View>
               </View>
-                <Text className="text-[16px] font-bold">
+                <Text className="text-[15px] font-semibold">
                 Tk 267
               </Text>
             </View>
+            <TouchableOpacity className="bg-primary py-[6px] rounded-lg mt-3">
+              <Text className="text-center font-bold text-white">
+              Select items to reorder
+              </Text>
+           </TouchableOpacity>
+          </View>
+            <View className="border border-[#33333352] p-3 rounded-xl mb-3">
+              <View className="flex-row justify-between">
+              <View className="flex-row">
+              <Image
+                  source={order}
+                  className="w-[90px] h-[90px] rounded-xl"
+              />
+              <View className="w-[200px] ml-4">
+                <Text className="text-[15px] font-semibold">Ka Te Kacchi Express - Aftabnagar</Text>
+                <Text className="mt-2">Picked up on 19 Apr 17:00</Text>
+                    <Text className="mt-2">Basmati Mutton Kacchi</Text>
+              </View>
+              </View>
+                <Text className="text-[15px] font-semibold">
+                Tk 267
+              </Text>
+            </View>
+            <TouchableOpacity className="bg-primary py-[6px] rounded-lg mt-3">
+              <Text className="text-center font-bold text-white">
+              Select items to reorder
+              </Text>
+           </TouchableOpacity>
+          </View>
+            <View className="border border-[#33333352] p-3 rounded-xl mb-3">
+              <View className="flex-row justify-between">
+              <View className="flex-row">
+              <Image
+                  source={order}
+                  className="w-[90px] h-[90px] rounded-xl"
+              />
+              <View className="w-[200px] ml-4">
+                <Text className="text-[15px] font-semibold">Ka Te Kacchi Express - Aftabnagar</Text>
+                <Text className="mt-2">Picked up on 19 Apr 17:00</Text>
+                    <Text className="mt-2">Basmati Mutton Kacchi</Text>
+              </View>
+              </View>
+                <Text className="text-[15px] font-semibold">
+                Tk 267
+              </Text>
+            </View>
+            <TouchableOpacity className="bg-primary py-[6px] rounded-lg mt-3">
+              <Text className="text-center font-bold text-white">
+              Select items to reorder
+              </Text>
+           </TouchableOpacity>
+          </View>
+            <View className="border border-[#33333352] p-3 rounded-xl mb-3">
+              <View className="flex-row justify-between">
+              <View className="flex-row">
+              <Image
+                  source={order}
+                  className="w-[90px] h-[90px] rounded-xl"
+              />
+              <View className="w-[200px] ml-4">
+                <Text className="text-[15px] font-semibold">Ka Te Kacchi Express - Aftabnagar</Text>
+                <Text className="mt-2">Picked up on 19 Apr 17:00</Text>
+                    <Text className="mt-2">Basmati Mutton Kacchi</Text>
+              </View>
+              </View>
+                <Text className="text-[15px] font-semibold">
+                Tk 267
+              </Text>
+            </View>
+            <TouchableOpacity className="bg-primary py-[6px] rounded-lg mt-3">
+              <Text className="text-center font-bold text-white">
+              Select items to reorder
+              </Text>
+           </TouchableOpacity>
+          </View>
+            <View className="border border-[#33333352] p-3 rounded-xl mb-3">
+              <View className="flex-row justify-between">
+              <View className="flex-row">
+              <Image
+                  source={order}
+                  className="w-[90px] h-[90px] rounded-xl"
+              />
+              <View className="w-[200px] ml-4">
+                <Text className="text-[15px] font-semibold">Ka Te Kacchi Express - Aftabnagar</Text>
+                <Text className="mt-2">Picked up on 19 Apr 17:00</Text>
+                    <Text className="mt-2">Basmati Mutton Kacchi</Text>
+              </View>
+              </View>
+                <Text className="text-[15px] font-semibold">
+                Tk 267
+              </Text>
+            </View>
+            <TouchableOpacity className="bg-primary py-[6px] rounded-lg mt-3">
+              <Text className="text-center font-bold text-white">
+              Select items to reorder
+              </Text>
+           </TouchableOpacity>
+          </View>
+            <View className="border border-[#33333352] p-3 rounded-xl mb-3">
+              <View className="flex-row justify-between">
+              <View className="flex-row">
+              <Image
+                  source={order}
+                  className="w-[90px] h-[90px] rounded-xl"
+              />
+              <View className="w-[200px] ml-4">
+                <Text className="text-[15px] font-semibold">Ka Te Kacchi Express - Aftabnagar</Text>
+                <Text className="mt-2">Picked up on 19 Apr 17:00</Text>
+                    <Text className="mt-2">Basmati Mutton Kacchi</Text>
+              </View>
+              </View>
+                <Text className="text-[15px] font-semibold">
+                Tk 267
+              </Text>
+            </View>
+            <TouchableOpacity className="bg-primary py-[6px] rounded-lg mt-3">
+              <Text className="text-center font-bold text-white">
+              Select items to reorder
+              </Text>
+           </TouchableOpacity>
           </View>
         </View>
         </ScrollView>
-        <Text>OrderAndReordering</Text>
+
       </SafeAreaView>
     );
   }
