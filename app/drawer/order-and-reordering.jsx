@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Entypo } from '@expo/vector-icons';
 import order from "../../assets/order/order.webp"
 
+
 export class OrderAndReordering extends Component {
   render() {
     return (
