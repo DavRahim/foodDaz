@@ -113,7 +113,7 @@ const CustomDrawerContent = (props) => {
                 ]}
                 style={{ backgroundColor: pathname == "/settings" ? "#333" : "#fff" }}
                 onPress={() => {
-                    router.push("/settings");
+                    router.push("/drawer/order-and-reordering");
                 }}
             />
             <DrawerItem
