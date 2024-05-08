@@ -10,6 +10,7 @@ const DrawerLayout = () => {
       <Stack.Screen name="vouchers-and-offers" options={{ headerShown: false }} />            
       <Stack.Screen name="order-and-reordering" options={{ headerShown: false }} />            
       <Stack.Screen name="addresses" options={{ headerShown: false }} />            
+      <Stack.Screen name="panda-rewards" options={{ headerShown: false }} />            
     </Stack>
   );
 };
