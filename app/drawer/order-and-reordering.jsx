@@ -1,4 +1,4 @@
-import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, StatusBar, Text, TouchableOpacity, View } from "react-native";
 import React, { Component } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Entypo } from '@expo/vector-icons';
@@ -157,7 +157,7 @@ export class OrderAndReordering extends Component {
           </View>
         </View>
         </ScrollView>
-
+        <StatusBar backgroundColor={"white"} barStyle={"dark-content"}/>
       </SafeAreaView>
     );
   }
