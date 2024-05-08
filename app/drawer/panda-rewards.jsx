@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, StatusBar } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { FontAwesome, AntDesign } from '@expo/vector-icons';
@@ -37,6 +37,7 @@ const PandaRewards = () => {
                 How to earn points
             </Text>
           </View>
+          <StatusBar backgroundColor={"#D00764"} barStyle={"light-content"}/>
     </SafeAreaView>
   );
 };
