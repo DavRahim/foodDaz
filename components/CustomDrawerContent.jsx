@@ -223,7 +223,7 @@ const CustomDrawerContent = (props) => {
                 ]}
                 style={{ backgroundColor: pathname == "/settings" ? "#333" : "#fff" }}
                 onPress={() => {
-                    router.push("/settings");
+                    router.push("/drawer/invite-friends");
                 }}
             />
             <View className="border-t-[1px] border-t-gray-200 py-5 pl-5">
