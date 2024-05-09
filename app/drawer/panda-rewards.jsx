@@ -206,6 +206,18 @@ const PandaRewards = () => {
 
 
                 </View>
+                
+
+                {/* turn point */}
+                <View className="bg-white mt-3 pt-14 pb-5">
+                    <Image
+                      source={rew}
+                      className="w-[130px] h-[130px] mx-auto "
+                    />
+                    <Text className="text-center text-[16px] font-bold text-[#33333379]">Ready to win?</Text>
+                    <Text className="text-center text-[22px] font-bold w-[280px] mx-auto mb-4">Turn point into your fave rewards</Text>
+                    <Text className="text-center text-primary">Terms  & conditions</Text>
+                </View>
                 <StatusBar backgroundColor={"#D00764"} barStyle={"light-content"} />
             </ScrollView>
         </SafeAreaView>
