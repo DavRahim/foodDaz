@@ -222,9 +222,9 @@ const PandaRewards = () => {
                     <Text className="text-center text-primary">Terms  & conditions</Text>
                 </View>
                 {/* box */}
-                <View className="bg-white px-4">
+                <View className="bg-white pt-4 pb-5 px-5 flex-row justify-between items-center">
                     {/* cart */}
-                    <View className="border w-[200px]">
+                    <View className="border border-[#33333357] rounded-xl w-[170px] py-3">
                         <Image
                         source={rew5}
                         className="w-[120px] h-[120px] mx-auto"
@@ -237,6 +237,50 @@ const PandaRewards = () => {
                             <Text>200</Text>
                         </View>
                     </View>
+                    <View className="border border-[#33333357] rounded-xl w-[170px] py-3">
+                        <Image
+                        source={rew5}
+                        className="w-[120px] h-[120px] mx-auto"
+                        resizeMode="cover"
+                        />
+                        <Text className="text-center text-[16px] font-bold">Voucher of</Text>
+                        <Text className="text-[26px] font-bold text-center">$ 20</Text>
+                        <View className="mx-auto flex-row items-center bg-slate-100 px-1 mt-1 rounded-lg py-[2px]">
+                             <MaterialCommunityIcons name="star-circle-outline" size={18} color="black" />
+                            <Text className="font-bold ml-2">200</Text>
+                        </View>
+                    </View>
+                
+                </View>
+                <View className="bg-white pt-4 pb-5 px-5 flex-row justify-between items-center">
+                    {/* cart */}
+                    <View className="border border-[#33333357] rounded-xl w-[170px] py-3">
+                        <Image
+                        source={rew5}
+                        className="w-[120px] h-[120px] mx-auto"
+                        resizeMode="cover"
+                        />
+                        <Text className="text-center text-[16px] font-bold">Voucher of</Text>
+                        <Text className="text-[26px] font-bold text-center">$ 20</Text>
+                        <View className="mx-auto flex-row items-center bg-slate-100">
+                             <MaterialCommunityIcons name="star-circle-outline" size={24} color="black" />
+                            <Text>200</Text>
+                        </View>
+                    </View>
+                    <View className="border border-[#33333357] rounded-xl w-[170px] py-3">
+                        <Image
+                        source={rew5}
+                        className="w-[120px] h-[120px] mx-auto"
+                        resizeMode="cover"
+                        />
+                        <Text className="text-center text-[16px] font-bold">Voucher of</Text>
+                        <Text className="text-[26px] font-bold text-center">$ 20</Text>
+                        <View className="mx-auto flex-row items-center bg-slate-100">
+                             <MaterialCommunityIcons name="star-circle-outline" size={24} color="black" />
+                            <Text>200</Text>
+                        </View>
+                    </View>
+                
                 </View>
                 <StatusBar backgroundColor={"#D00764"} barStyle={"light-content"} />
             </ScrollView>
