@@ -8,6 +8,8 @@ import { FontAwesome5 } from '@expo/vector-icons';
 
 import rew from "../../assets/rew/rew.png"
 import rew1 from "../../assets/rew/rew1.png"
+import rew5 from "../../assets/rew/rew5.png"
+import rew6 from "../../assets/rew/rew6.png"
 
 const PandaRewards = () => {
     return (
@@ -211,12 +213,30 @@ const PandaRewards = () => {
                 {/* turn point */}
                 <View className="bg-white mt-3 pt-14 pb-5">
                     <Image
-                      source={rew}
+                        source={rew6}
                       className="w-[130px] h-[130px] mx-auto "
+                      resizeMode="cover"
                     />
                     <Text className="text-center text-[16px] font-bold text-[#33333379]">Ready to win?</Text>
                     <Text className="text-center text-[22px] font-bold w-[280px] mx-auto mb-4">Turn point into your fave rewards</Text>
                     <Text className="text-center text-primary">Terms  & conditions</Text>
+                </View>
+                {/* box */}
+                <View className="bg-white px-4">
+                    {/* cart */}
+                    <View className="border w-[200px]">
+                        <Image
+                        source={rew5}
+                        className="w-[120px] h-[120px] mx-auto"
+                        resizeMode="cover"
+                        />
+                        <Text className="text-center text-[16px] font-bold">Voucher of</Text>
+                        <Text className="text-[26px] font-bold text-center">$ 20</Text>
+                        <View className="mx-auto flex-row items-center bg-slate-100">
+                             <MaterialCommunityIcons name="star-circle-outline" size={24} color="black" />
+                            <Text>200</Text>
+                        </View>
+                    </View>
                 </View>
                 <StatusBar backgroundColor={"#D00764"} barStyle={"light-content"} />
             </ScrollView>
