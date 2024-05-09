@@ -190,6 +190,20 @@ const PandaRewards = () => {
 
                     </ScrollView>
 
+                    <View className="flex-row py-3 border-t-[#33333338] px-7 my-7 items-center border-t">
+                        <Image
+                        source={rew1}
+                        className="w-[70px] h-[70px] mr-7"
+                        />
+                        <View>
+                        <View className="flex-row justify-between">
+                            <Text className="text-[16px] font-bold">Badges</Text>
+                            <Text className="text-[15px] font-bold text-primary">See all</Text>
+                        </View>
+                        <Text className="mt-4">Complete stamp cards to earn badges</Text>
+                        </View>
+                    </View>
+
 
                 </View>
                 <StatusBar backgroundColor={"#D00764"} barStyle={"light-content"} />
