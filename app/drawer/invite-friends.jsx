@@ -20,9 +20,7 @@ const InviteFriends = () => {
             <Text className="w-[250px] text-center text-[20px] font-bold">
                 Invite your friends for a TK 200 referral bonus!
             </Text>
-               
           </View>
-
           <StatusBar backgroundColor={"#fff"} barStyle={"dark-content"}/>
     </SafeAreaView>
   );
