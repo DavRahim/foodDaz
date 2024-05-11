@@ -1033,8 +1033,8 @@ const Page = () => {
               />
             </View>
           </View>
-          <StatusBar backgroundColor={"#D00764"} barStyle={"light-content"} />
         </ScrollView>
+          <StatusBar backgroundColor={"#D00764"} barStyle={"light-content"} />
       </ScrollView>
     </SafeAreaView>
   );
