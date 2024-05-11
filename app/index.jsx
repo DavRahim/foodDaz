@@ -1,4 +1,4 @@
-import { View, Text, Button, TouchableOpacity, StatusBar, TextInput, Image, ScrollView } from "react-native";
+import { View, Text, Button, TouchableOpacity, StatusBar, TextInput, Image, ScrollView, Animated } from "react-native";
 import React from "react";
 import { router, useNavigation } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -51,12 +51,46 @@ import pro from "../assets/pandaIcon.jpg"
 import mapP from "../assets/mapP.jpg"
 const Page = () => {
   const navigation = useNavigation()
+   
+  let AnimatedHeaderValue = new Animated.Value(0);
+  const Header_Max_Height = 150 //Max Height
+  const Header_Min_Height = 150 //Max Height
+
+  const animateHeaderBackgroundColor = AnimatedHeaderValue.interpolate({
+    inputRange: [0, Header_Max_Height - Header_Min_Height],
+    outputRange: ["blue", "red"],
+    extrapolate: "clamp"
+  });
+
+  const animateHeaderHeight = AnimatedHeaderValue.interpolate({
+    inputRange: [0, Header_Max_Height - Header_Min_Height],
+    outputRange: [Header_Max_Height, Header_Min_Height],
+    extrapolate: "clamp"
+  })
+
+
   return (
     <SafeAreaView>
+      <View className="bg-primary px-3 pt-[10px] pb-[15px] flex gap-[13px]">
+        {/* location and cart */}
+        <View className="flex flex-row justify-between ">
+          <View className="flex flex-row justify-center items-center gap-4">
+            <Ionicons name="reorder-three-outline" onPress={() => navigation.openDrawer()} size={28} color="white" />
+            <View className="text-white">
+              <Text className="text-[16px] font-semibold text-white">Mohakhli, Dhaka, BD-2001</Text>
+              <Text className="text-white text-[13px]">Dhaka</Text>
+            </View>
+          </View>
+          <View className="flex flex-row justify-center items-center gap-3">
+            <AntDesign name="hearto" size={18} color="white" />
+            <AntDesign name="shoppingcart" size={20} color="white" />
+          </View>
+        </View>
+        </View>
       <ScrollView className="">
-        <View className="bg-primary px-3 pt-[10px] pb-[15px] flex gap-[13px]">
+        <View className="bg-primary px-3 pb-[15px] flex gap-[13px]">
           {/* location and cart */}
-          <View className="flex flex-row justify-between ">
+          {/* <View className="flex flex-row justify-between ">
             <View className="flex flex-row justify-center items-center gap-4">
               <Ionicons name="reorder-three-outline" onPress={() => navigation.openDrawer()} size={28} color="white" />
               <View className="text-white">
@@ -68,7 +102,7 @@ const Page = () => {
               <AntDesign name="hearto" size={18} color="white" />
               <AntDesign name="shoppingcart" size={20} color="white" />
             </View>
-          </View>
+          </View> */}
           {/* Input field */}
 
           <View className="bg-white rounded-[30px] py-[7px] px-4">
@@ -256,7 +290,7 @@ const Page = () => {
 
           <View className="pl-4 pt-[10px]">
             <Text className="text-[20px] font-bold mb-4">Popular Restaurants</Text>
-            <ScrollView horizontal={true}>
+            <ScrollView  horizontal={true}>
               {/* cart */}
 
               <View className="w-[270px] h-[250px] mr-3">
