@@ -4,6 +4,7 @@ import { AntDesign } from '@expo/vector-icons';
 import inv from "../../assets/rew/rew6.png"
 
 const InviteFriends = () => {
+  console.log("git");
   return (
     <SafeAreaView className="bg-white">
           <View className="bg-white px-4 flex-row items-center py-4">
@@ -19,7 +20,7 @@ const InviteFriends = () => {
             <Text className="w-[250px] text-center text-[20px] font-bold">
                 Invite your friends for a TK 200 referral bonus!
             </Text>
-
+               
           </View>
 
           <StatusBar backgroundColor={"#fff"} barStyle={"dark-content"}/>
