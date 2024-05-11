@@ -52,23 +52,7 @@ import mapP from "../assets/mapP.jpg"
 const Page = () => {
   const navigation = useNavigation()
    
-  let AnimatedHeaderValue = new Animated.Value(0);
-  const Header_Max_Height = 150 //Max Height
-  const Header_Min_Height = 150 //Max Height
-
-  const animateHeaderBackgroundColor = AnimatedHeaderValue.interpolate({
-    inputRange: [0, Header_Max_Height - Header_Min_Height],
-    outputRange: ["blue", "red"],
-    extrapolate: "clamp"
-  });
-
-  const animateHeaderHeight = AnimatedHeaderValue.interpolate({
-    inputRange: [0, Header_Max_Height - Header_Min_Height],
-    outputRange: [Header_Max_Height, Header_Min_Height],
-    extrapolate: "clamp"
-  })
-
-
+  
   return (
     <SafeAreaView>
       <View className="bg-primary px-3 pt-[10px] pb-[15px] flex gap-[13px]">
