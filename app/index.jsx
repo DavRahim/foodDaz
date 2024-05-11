@@ -1,8 +1,8 @@
-import { View, Text, Button, TouchableOpacity, StatusBar, TextInput, Image, ScrollView, Animated } from "react-native";
+import { View, Text, TouchableOpacity, StatusBar, TextInput, Image, ScrollView } from "react-native";
 import React from "react";
-import { router, useNavigation } from "expo-router";
+import { useNavigation } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { MaterialCommunityIcons, AntDesign, MaterialIcons, Ionicons } from '@expo/vector-icons';
+import { AntDesign, MaterialIcons, Ionicons } from '@expo/vector-icons';
 import food from "../assets/panda1.png"
 import food1 from "../assets/image10.png"
 import food2 from "../assets/image11.png"
@@ -67,7 +67,7 @@ const Page = () => {
           </View>
           <View className="flex flex-row justify-center items-center gap-3">
             <AntDesign name="hearto" size={18} color="white" />
-            <AntDesign name="shoppingcart" size={20} color="white" />
+            <AntDesign name="shoppingcart " size={20} color="white" />
           </View>
         </View>
         </View>
